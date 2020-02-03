@@ -142,6 +142,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Rsources\ResourceDictionaries\ButtonDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rsources\ResourceDictionaries\ScrollViewerDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\FinalPage.xaml.cs">
@@ -184,6 +192,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Rsources\rendlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\rendlogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
