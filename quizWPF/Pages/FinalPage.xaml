@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:quizWPF.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="FinalPage" Background="AliceBlue">
+      Title="FinalPage" Background="#FF49BCD9">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -28,6 +28,7 @@
                         Grid.Column="2"
                        FontWeight="Heavy"
                        Text="Your Score:"
+                    Foreground="Coral"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                     Margin="0,200,0,0"/>

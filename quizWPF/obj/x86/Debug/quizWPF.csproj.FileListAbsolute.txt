@@ -44,3 +44,6 @@ E:\C Sharp\quiz\quizWPF\obj\x86\Debug\Pages\QuestionAnswerPage.baml
 E:\C Sharp\quiz\quizWPF\obj\x86\Debug\Pages\RegisterUser.baml
 E:\C Sharp\quiz\quizWPF\obj\x86\Debug\Pages\FinalPage.g.cs
 E:\C Sharp\quiz\quizWPF\obj\x86\Debug\Pages\FinalPage.baml
+E:\C Sharp\quiz\quizWPF\obj\x86\Debug\Rsources\ResourceDictionaries\ButtonDictionary.baml
+E:\C Sharp\quiz\quizWPF\obj\x86\Debug\Rsources\ResourceDictionaries\ScrollViewerDictionary.baml
+E:\C Sharp\quiz\quizWPF\obj\x86\Debug\App.baml

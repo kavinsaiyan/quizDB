@@ -44,3 +44,6 @@ E:\C Sharp\quiz\quizWPF\obj\x86\Release\quizWPF.csproj.GenerateResource.cache
 E:\C Sharp\quiz\quizWPF\obj\x86\Release\quizWPF.csproj.CopyComplete
 E:\C Sharp\quiz\quizWPF\obj\x86\Release\quizWPF.exe
 E:\C Sharp\quiz\quizWPF\obj\x86\Release\quizWPF.pdb
+E:\C Sharp\quiz\quizWPF\obj\x86\Release\Rsources\ResourceDictionaries\ButtonDictionary.baml
+E:\C Sharp\quiz\quizWPF\obj\x86\Release\Rsources\ResourceDictionaries\ScrollViewerDictionary.baml
+E:\C Sharp\quiz\quizWPF\obj\x86\Release\App.baml

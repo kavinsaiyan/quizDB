@@ -6,8 +6,8 @@
       xmlns:local="clr-namespace:quizWPF.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegisterUser" Background="AliceBlue">
-
+      Title="RegisterUser" Background="#FF49BCD9">
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -36,7 +36,7 @@
                  FontSize="30"
                  x:Name="Name"/>
 
-        <Button Grid.Row="3" Grid.Column="2" MinHeight="40" MinWidth="40" Margin="30,30,10,10" Click="Button_Click">
+        <Button Grid.Row="3" Style="{StaticResource ButtonStyle}" Grid.Column="2" MinHeight="40" MinWidth="40" Margin="30,30,10,10" Click="Button_Click">
             <TextBlock FontSize="20">Register</TextBlock>
         </Button>
     </Grid>
