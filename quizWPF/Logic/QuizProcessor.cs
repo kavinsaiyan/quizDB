@@ -53,5 +53,6 @@ namespace quizWPF.Logic
             if (!string.IsNullOrEmpty(USerName))
                 DataAccess.RegisterUserScore(USerName, USerScore);
         }
+
     }
 }

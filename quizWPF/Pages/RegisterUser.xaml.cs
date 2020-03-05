@@ -22,9 +22,13 @@ namespace quizWPF.Pages
             //register the user
             QuizProcessor.RegisterUser(Name.Text);
 
-            //navigate to question and answer page
+            //generate to question and answer page
             QuizProcessor.GeneratePages();
 
+            //handle test start
+            TestRulesHandler.HandleTestStart();
+
+            //QuizProcessor.MainWindow.LostFocus += QuizProcessor.MainWindow.Close;
             //navigate to the first question
             NavigationService.Navigate(QuizProcessor.pages[0]);
         }

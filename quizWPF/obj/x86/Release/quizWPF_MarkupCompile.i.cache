@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\C Sharp\quiz\quizWPF\obj\x86\Release\
+E:\uploadquiz\quizDB\quizWPF\obj\x86\Release\
 quizWPF
 none
 false
 TRACE
-E:\C Sharp\quiz\quizWPF\App.xaml
-5-1651026549
+E:\uploadquiz\quizDB\quizWPF\App.xaml
+8522035185
 
-13-825611991
-1281110684927
-MainWindow.xaml;Pages\FinalPage.xaml;Pages\Page1.xaml;Pages\QuestionAnswerPage.xaml;Pages\RegisterUser.xaml;
+161300814868
+152-1769227056
+MainWindow.xaml;Pages\FinalPage.xaml;Pages\GetTestPage.xaml;Pages\Page1.xaml;Pages\QuestionAnswerPage.xaml;Pages\RegisterUser.xaml;Rsources\ResourceDictionaries\ButtonDictionary.xaml;Rsources\ResourceDictionaries\ScrollViewerDictionary.xaml;
 
 True
 

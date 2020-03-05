@@ -24,6 +24,10 @@ namespace quizWPF.Pages
         {
             InitializeComponent();
 
+            //handle test submit
+            TestRulesHandler.HandleTestSubmit();
+
+            //display score
             ScoreTextBlock.Text += QuizProcessor.USerScore.ToString();
         }
     }

@@ -8,116 +8,129 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="QuestionAnswerPage" Background="#FF49BCD9">
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="20"/>
-        </Grid.RowDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
 
-        <!--Question-->
-        <ScrollViewer VerticalScrollBarVisibility="Auto" 
-                 HorizontalScrollBarVisibility="Auto"
-                   Style="{DynamicResource ScrollViewerStyle}"
-                      Grid.Row="1" Grid.Column="1">
-            <TextBlock x:Name="Question" Text="Question"
-                   FontSize="20" 
-                   Margin="0,0,0,0"/>
-        </ScrollViewer>
+            <!--Question-->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                     HorizontalScrollBarVisibility="Auto"
+                       Style="{DynamicResource ScrollViewerStyle}"
+                          Grid.Row="1" Grid.Column="1">
+                <TextBlock x:Name="Question" Text="Question"
+                       FontSize="20" 
+                       Margin="0,0,0,0"/>
+            </ScrollViewer>
 
-        <!--AnswerOptions-->
-        <RadioButton x:Name="AnswerButton0" 
-                         IsChecked="False" 
-                         FontSize="20"
-                         MinHeight="30"
-                        Grid.Row="2" Grid.Column="1"
-                        Margin="40,30,0,0"
-                        Checked="AnswerButton0_Checked">
-            Answer0
-        </RadioButton>
+            <!--AnswerOptions-->
+            <RadioButton x:Name="AnswerButton0" 
+                             IsChecked="False" 
+                             FontSize="20"
+                             MinHeight="30"
+                            Grid.Row="2" Grid.Column="1"
+                            Margin="40,30,0,0"
+                            Checked="AnswerButton0_Checked">
+                Answer0
+            </RadioButton>
 
-        <RadioButton x:Name="AnswerButton1" 
-                         IsChecked="False" 
-                         FontSize="20"
-                         MinHeight="30"
-                        Grid.Row="3" Grid.Column="1"
-                         Margin="40,0,0,0"
-                         Checked="AnswerButton1_Checked">
-            Answer1
-        </RadioButton>
+            <RadioButton x:Name="AnswerButton1" 
+                             IsChecked="False" 
+                             FontSize="20"
+                             MinHeight="30"
+                            Grid.Row="3" Grid.Column="1"
+                             Margin="40,0,0,0"
+                             Checked="AnswerButton1_Checked">
+                Answer1
+            </RadioButton>
 
-        <RadioButton x:Name="AnswerButton2" 
-                         IsChecked="False" 
-                         FontSize="20"
-                         MinHeight="30"
-                         Margin="40,0,0,0"
-                         Grid.Row="4" Grid.Column="1"
-                         Checked="AnswerButton2_Checked">
-            Answer2
-        </RadioButton>
+            <RadioButton x:Name="AnswerButton2" 
+                             IsChecked="False" 
+                             FontSize="20"
+                             MinHeight="30"
+                             Margin="40,0,0,0"
+                             Grid.Row="4" Grid.Column="1"
+                             Checked="AnswerButton2_Checked">
+                Answer2
+            </RadioButton>
 
-        <RadioButton x:Name="AnswerButton3" 
-                         IsChecked="False" 
-                         FontSize="20"
-                         MinHeight="30"
-                         Grid.Row="5" Grid.Column="1"
-                         Margin="40,0,0,0"
-                         Checked="AnswerButton3_Checked">
-            Answer3
-        </RadioButton>
+            <RadioButton x:Name="AnswerButton3" 
+                             IsChecked="False" 
+                             FontSize="20"
+                             MinHeight="30"
+                             Grid.Row="5" Grid.Column="1"
+                             Margin="40,0,0,0"
+                             Checked="AnswerButton3_Checked">
+                Answer3
+            </RadioButton>
 
-        <StackPanel Orientation="Horizontal"
-                        VerticalAlignment="Bottom"
-                        Margin="0,50,0,0"
-                        Grid.Row="6"
-                        Grid.Column="1">
-            <!--PreviousQuestionButton-->
-            <Button x:Name="PreviousQuestionButton"
-                        Width="120"
-                        Height="40"
-                        Style="{DynamicResource ButtonStyle}"
-                        Content ="Previous"
-                        FontSize="26"
-                        Click="PreviousQuestionButton_Click"
-                        Margin="0,0,0,0"
-                />
+            <Grid  VerticalAlignment="Bottom"
+                            Margin="0,0,0,0"
+                            Grid.Row="6"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <!--PreviousQuestionButton-->
+                <Button x:Name="PreviousQuestionButton"
+                            Width="120"
+                            Height="40"
+                            Style="{DynamicResource ButtonStyle}"
+                            Content ="Previous"
+                            FontSize="26"
+                            Grid.Column="0"
+                            Click="PreviousQuestionButton_Click"
+                            Margin="0,0,0,0"
+                    />
 
-            <!--SubmitTestButton-->
-            <Button x:Name="SubmitTestButton"                        
-                        Width="120"
-                        Height="40"
-                        Margin="200,0,0,0"
-                        Style="{DynamicResource ButtonStyle}"
-                        Content ="Submit"
-                        FontSize="26"
-                        IsEnabled="False"
-                        Click="SubmitTestButton_Click"
-                />
+                <!--SubmitTestButton-->
+                <Button x:Name="SubmitTestButton"                        
+                            Width="120"
+                            Height="40"
+                            Margin="0,0,0,0"
+                            Style="{DynamicResource ButtonStyle}"
+                            Content ="Submit"
+                            FontSize="26"
+                            Grid.Column="2"
+                            IsEnabled="False"
+                            Click="SubmitTestButton_Click"
+                    />
 
-            <!--NextButton-->
-            <Button x:Name="NextQuestionButton"
-                        Width="120"
-                        Height="40"
-                        Margin="200,0,0,0"
-                        Style="{DynamicResource ButtonStyle}"
-                        Content ="Next"
-                        FontSize="26"
-                        Click="NextQuestionButton_Click"
-                />
-        </StackPanel>
+                <!--NextButton-->
+                <Button x:Name="NextQuestionButton"
+                            Width="120"
+                            Height="40"
+                            Margin="0,0,0,0"
+                            Style="{DynamicResource ButtonStyle}"
+                            Content ="Next"
+                            Grid.Column="4"
+                            FontSize="26"
+                            Click="NextQuestionButton_Click"
+                    />
+            </Grid>
 
-    </Grid>
+        </Grid>
+    </ScrollViewer>
 </Page>

@@ -1,0 +1,51 @@
+﻿2020-03-05 23:04:00> Program: Starting Squirrel Updater: --releasify QuizDBClientPackage.1.0.0.nupkg
+2020-03-05 23:04:00> Program: Bootstrapper EXE found at:E:\uploadquiz\quizDB\quizWPF\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2020-03-05 23:04:00> Program: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage.1.0.0.nupkg
+2020-03-05 23:04:01> ReleasePackage: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage.1.0.0.nupkg => E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage-1.0.0-full.nupkg
+2020-03-05 23:04:02> ReleasePackage: Extracting dependent packages: []
+2020-03-05 23:04:02> ReleasePackage: Removing unnecessary data
+2020-03-05 23:04:02> ReleasePackage: No release notes found in C:\Users\Kavin\AppData\Local\SquirrelTemp\tempc\QuizDBClientPackage.nuspec
+2020-03-05 23:04:08> Program: Building embedded zip file for Setup.exe
+2020-03-05 23:05:50> Program: Starting Squirrel Updater: --releasify QuizDBServerPackage.1.0.0.nupkg
+2020-03-05 23:05:50> Program: Bootstrapper EXE found at:E:\uploadquiz\quizDB\quizWPF\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2020-03-05 23:05:50> Unhandled exception: System.IO.FileNotFoundException: Could not find file 'QuizDBServerPackage.1.0.0.nupkg'.
+File name: 'QuizDBServerPackage.1.0.0.nupkg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+2020-03-05 23:06:21> Program: Starting Squirrel Updater: --releasify E:\uploadquiz\quizDB\DBServerClient\QuizDBServerPackage.1.0.0.nupkg
+2020-03-05 23:06:21> Program: Bootstrapper EXE found at:E:\uploadquiz\quizDB\quizWPF\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2020-03-05 23:06:21> Program: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBServerPackage.1.0.0.nupkg
+2020-03-05 23:06:21> ReleasePackage: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBServerPackage.1.0.0.nupkg => E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBServerPackage-1.0.0-full.nupkg
+2020-03-05 23:06:22> ReleasePackage: Extracting dependent packages: []
+2020-03-05 23:06:22> ReleasePackage: Removing unnecessary data
+2020-03-05 23:06:22> ReleasePackage: No release notes found in C:\Users\Kavin\AppData\Local\SquirrelTemp\tempc\QuizDBServerPackage.nuspec
+2020-03-05 23:06:25> Program: Building embedded zip file for Setup.exe
+2020-03-05 23:09:11> Program: Starting Squirrel Updater: --releasify QuizDBClientPackage.1.0.0.nupkg
+2020-03-05 23:09:11> Program: Bootstrapper EXE found at:E:\uploadquiz\quizDB\quizWPF\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2020-03-05 23:09:11> Program: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage.1.0.0.nupkg
+2020-03-05 23:09:12> ReleasePackage: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage.1.0.0.nupkg => E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage-1.0.0-full.nupkg
+2020-03-05 23:09:14> ReleasePackage: Extracting dependent packages: []
+2020-03-05 23:09:14> ReleasePackage: Removing unnecessary data
+2020-03-05 23:09:14> ReleasePackage: No release notes found in C:\Users\Kavin\AppData\Local\SquirrelTemp\tempc\QuizDBClientPackage.nuspec
+2020-03-05 23:09:21> Program: Building embedded zip file for Setup.exe
+2020-03-05 23:13:51> Program: Starting Squirrel Updater: --releasify QuizDBClientPackage.1.0.0.nupkg
+2020-03-05 23:13:51> Program: Bootstrapper EXE found at:E:\uploadquiz\quizDB\quizWPF\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2020-03-05 23:13:51> Program: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage.1.0.0.nupkg
+2020-03-05 23:13:52> ReleasePackage: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage.1.0.0.nupkg => E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBClientPackage-1.0.0-full.nupkg
+2020-03-05 23:13:57> ReleasePackage: Extracting dependent packages: []
+2020-03-05 23:13:57> ReleasePackage: Removing unnecessary data
+2020-03-05 23:13:57> ReleasePackage: No release notes found in C:\Users\Kavin\AppData\Local\SquirrelTemp\tempc\QuizDBClientPackage.nuspec
+2020-03-05 23:14:10> Program: Building embedded zip file for Setup.exe
+2020-03-05 23:25:31> Program: Starting Squirrel Updater: --realsify E:\uploadquiz\quizDB\DBServerClient\QuizDBServerPackage.1.0.0.nupkg
+2020-03-05 23:26:07> Program: Starting Squirrel Updater: --releasify E:\uploadquiz\quizDB\DBServerClient\QuizDBServerPackage.1.0.0.nupkg
+2020-03-05 23:26:07> Program: Bootstrapper EXE found at:E:\uploadquiz\quizDB\quizWPF\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2020-03-05 23:26:07> Program: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBServerPackage.1.0.0.nupkg
+2020-03-05 23:26:08> ReleasePackage: Creating release package: E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBServerPackage.1.0.0.nupkg => E:\uploadquiz\quizDB\quizWPF\Releases\QuizDBServerPackage-1.0.0-full.nupkg
+2020-03-05 23:26:08> ReleasePackage: Extracting dependent packages: []
+2020-03-05 23:26:08> ReleasePackage: Removing unnecessary data
+2020-03-05 23:26:08> ReleasePackage: No release notes found in C:\Users\Kavin\AppData\Local\SquirrelTemp\tempc\QuizDBServerPackage.nuspec
+2020-03-05 23:26:09> Program: Building embedded zip file for Setup.exe

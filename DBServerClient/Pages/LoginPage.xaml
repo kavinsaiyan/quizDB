@@ -1,0 +1,68 @@
+﻿<Page x:Class="DBServerClient.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DBServerClient.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="577"
+      Title="LoginPage"    
+      Background="#FF49BCD9" Foreground="Coral">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Name"
+                   FontSize="40"
+                   Padding="20,20,20,20"/>
+
+        <TextBox x:Name="NameTextBox"
+                   Grid.Row="1"
+                   Grid.Column="2"
+                   MinWidth="330"
+                 FontSize="40"
+                   Margin="10,10,10,10"
+                   Text="{Binding Name}"/>
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="1"
+                   Text="Password"
+                   FontSize="40"
+                   Padding="20,20,20,20"/>
+        
+        <TextBox x:Name="PasswordTextBox"
+                   Grid.Row="2"
+                   Grid.Column="2"
+                   MinWidth="330"
+                 FontSize="40"
+                   Margin="10,10,10,10"
+                   Text="{Binding Password}"/>
+
+        <Button x:Name="LoginButton"
+                Grid.Column="1"
+                Grid.Row="3"
+                FontSize="40"
+                Margin="20,20,20,20"
+                Content="Login"
+                Style="{StaticResource ButtonStyle}"
+                Click="LoginButton_Click"/>
+
+    </Grid>
+</Page>

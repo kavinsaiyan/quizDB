@@ -1,6 +1,9 @@
 ﻿using System.Windows;
+using System;
+using System.Threading.Tasks;
 using quizWPF.Pages;
-
+using quizWPF.Logic;
+using Squirrel;
 namespace quizWPF
 {
     /// <summary>
@@ -12,9 +15,27 @@ namespace quizWPF
         {
             InitializeComponent();
 
+            //set reference to handle rules
+            TestRulesHandler.MainWindow = this;
+
             //get to the starting page
-            RegisterUser page1 = new RegisterUser();
+            GetTestPage page1 = new GetTestPage();
             Main.Content = page1;
+
+            //try to update if possible
+            Task.Run(async () => { await CheckForUpdates(); });
+        }
+
+        public async Task CheckForUpdates() 
+        {
+            Task<UpdateManager> manager;
+            using (manager = UpdateManager.GitHubUpdateManager(@"https://github.com/kavinsaiyan/quizDB"))
+            {
+                var val = await manager.Result.UpdateApp();
+            }
+            manager.Result.Dispose();
+            manager = null;
+            GC.WaitForFullGCComplete();
         }
 
     }

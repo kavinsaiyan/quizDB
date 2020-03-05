@@ -1,4 +1,5 @@
 ﻿using quizWPF.Logic;
+using System.Windows;
 using System.Windows.Controls;
 
 
@@ -92,5 +93,6 @@ namespace quizWPF.Pages
             if (indexOfThisPage >= 1)
                 NavigationService.Navigate(QuizProcessor.pages[indexOfThisPage - 1]);
         }
+
     }
 }
